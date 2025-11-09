@@ -84,6 +84,11 @@ body {
   height: auto;
 }
 
+.imgSC {
+  width: 35px;
+  height: auto;
+}
+
 /* Banner Principal */
 .hero {
   background: linear-gradient(135deg, #166534 0%, #22c55e 100%);
@@ -211,46 +216,188 @@ body {
   border-top: 1px solid #646464;
 }
 
-/* Simulador */
-.credit-sim {
-  background: white;
-  border-radius: 10px;
-  padding: 1.5rem;
-  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease;
-  margin-left: 25rem;
-  margin-right: 25rem;
-  margin-bottom: 2rem;
+/* =====simulador===== */
+.loan-form--simulator {
+  max-width: 980px;
+  margin: 0 auto 3rem;
+  background: none;
+  padding: 0;
+  box-shadow: none;
 }
 
-.credit-sim:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(22, 101, 52, 0.2);
-}
-
-.card {
-  height: 25rem;
-  display: flex;
-  flex-direction: column;
-  padding-top: 6rem;
-}
-
-select {
-  padding: 8px 12px;
-  color: #333;
-  background-color: #fff;
-  border: 2px solid #22c55e;
+/* Fieldset y legend: Estandarizado */
+.loan-form--simulator fieldset {
+  border: 1px solid #e6f3ea;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
   border-radius: 8px;
-  font-size: 16px;
-  appearance: none;
-  cursor: pointer;
-  outline: none;
-  transition: border-color 0.3s;
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  background: white;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
 }
 
-select:focus {
-  border-color: #166534;
+.loan-form--simulator legend {
+  padding: 0 8px;
+  font-weight: 700;
+  color: #166534;
+}
+
+/* Texto dentro del simulador */
+.sim-info {
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.credits-grid--compact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.credit-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.credit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(22,101,52,0.12);
+}
+
+.card-header img {
+  height: 36px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.btn-primary, .btn-secondary {
+  min-width: 160px;
+}
+
+/* Responsive Simulador*/
+@media (max-width: 900px) {
+  .loan-form--simulator {
+    padding: 0 1rem;
+  }
+  .credits-grid--compact {
+    grid-template-columns: 1fr;
+  }
+  .form-actions {
+    justify-content: stretch;
+    flex-direction: column;
+  }
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+
+/* ====== Estilos del formulario de solicitud ====== */
+.form-section {
+  padding: 2rem 0 4rem;
+}
+
+.loan-form {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+/* Fieldset y leyenda */
+.loan-form fieldset {
+  border: 1px solid #e6f3ea;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-radius: 8px;
+}
+
+.loan-form legend {
+  padding: 0 8px;
+  font-weight: 700;
+  color: #166534;
+}
+
+/* Labels e inputs */
+.loan-form label {
+  display: block;
+  margin-top: 0.75rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.loan-form input[type="text"],
+.loan-form input[type="email"],
+.loan-form input[type="tel"],
+.loan-form input[type="number"],
+.loan-form select,
+.loan-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 1.5px solid #d1e7d6;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 1rem;
+  color: #111827;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.loan-form input:focus,
+.loan-form select:focus,
+.loan-form textarea:focus {
+  outline: none;
+  border-color: #22c55e;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.12);
+}
+
+.loan-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Acciones del formulario */
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: flex-end;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .credit-sim {
+    margin: 1rem;
+  }
+
+  .loan-form {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-flex {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
