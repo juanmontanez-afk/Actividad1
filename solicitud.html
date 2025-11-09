@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreditSmart</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="img/imgLI.png">
+    <link rel="icon" href="img/imgCS.png">
+</head>
+
+<body>
+    
+  <!-- Navegación -->
+<nav class="navbar">
+  <div class="container navbar-flex">
+    <h1 class="logo">
+      <a href="index.html">
+        <img src="img/imgCS.png" alt="Logo CreditSmart" class="imgCS"> CreditSmart
+      </a>
+    </h1>
+    <ul class="menu">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="simulador.html">Simulador</a></li>
+      <li><a href="solicitud.html">Solicitar Crédito</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- Encabezado -->
+  <header class="hero small-hero">
+    <div class="container">
+      <h2><img src="img/imgSC.png" alt="Simulador" class="imgSC"> Solicita tu credito</h2>
+      <p>Completa el formulario para iniciar tu solicitud. En esta actividad el formulario es sólo de diseño.</p>
+    </div>
+  </header>
+
+  <!-- Formulario -->
+  <main class="container">
+    <section class="form-section">
+      <form class="loan-form" novalidate>
+
+        <fieldset>
+          <legend>Datos personales</legend>
+
+          <label for="nombre">Nombre completo</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Juan Pérez" />
+
+          <label for="cedula">Cédula</label>
+          <input id="cedula" name="cedula" type="number" placeholder="12345678" />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="correo@ejemplo.com" />
+
+          <label for="telefono">Teléfono</label>
+          <input id="telefono" name="telefono" type="tel" placeholder="+57 300 0000000" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos del crédito</legend>
+
+          <label for="tipo-credito">Tipo de crédito</label>
+          <select id="tipo-credito" name="tipo-credito">
+            <option value="">Selecciona</option>
+            <option>Crédito Libre Inversión</option>
+            <option>Crédito Vehículo</option>
+            <option>Crédito Educativo</option>
+            <option>Crédito Vivienda</option>
+            <option>Crédito Empresarial</option>
+            <option>Tarjeta de Crédito CS</option>
+          </select>
+
+          <label for="monto-solicitado">Monto solicitado</label>
+          <input id="monto-solicitado" name="monto-solicitado" type="number" placeholder="1000000" />
+
+          <label for="plazo">Plazo en meses</label>
+          <select id="plazo" name="plazo">
+            <option value="">Selecciona</option>
+            <option>12</option>
+            <option>24</option>
+            <option>36</option>
+            <option>48</option>
+            <option>60</option>
+          </select>
+
+          <label for="destino">Destino del crédito</label>
+          <textarea id="destino" name="destino" rows="4" placeholder="Describe el uso del crédito"></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos laborales</legend>
+
+          <label for="empresa">Empresa donde trabaja</label>
+          <input id="empresa" name="empresa" type="text" placeholder="Nombre de la empresa" />
+
+          <label for="cargo">Cargo</label>
+          <input id="cargo" name="cargo" type="text" placeholder="Ej. Analista" />
+
+          <label for="ingresos">Ingresos mensuales</label>
+          <input id="ingresos" name="ingresos" type="number" placeholder="2000000" />
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Enviar Solicitud</button>
+          <button type="reset" class="btn-secondary">Limpiar Formulario</button>
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+
+        <!-- Footer -->
+        <Footer class="footer-container">
+        <div class="footer-index">
+                <h3>CreditSmart ©</h3>
+                <p>Todos los derechos reservados 
+                    2025</p>
+            </div>
+      </Footer>
+</body>
