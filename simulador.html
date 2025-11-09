@@ -33,32 +33,80 @@
     </div>
   </header>
 
-  <!-- Simulador -->
-  <section class="credit-sim">
-    <div class="card">
-      <label for="tipo-credito"><h4>Tipo de crédito</h4></label>
-      <select id="tipo-credito">
-        <option>Selecciona</option>
-        <option>Crédito Libre Inversión</option>
-        <option>Crédito Vehículo</option>
-        <option>Crédito Educativo</option>
-        <option>Crédito Vivienda</option>
-        <option>Crédito Empresarial</option>
-        <option>Tarjeta de Crédito CS</option>
-      </select>
+<!-- Simulador -->
+  <main class="container">
+    <section class="form-section">
+      <form class="loan-form loan-form--simulator" novalidate>
 
-      <label for="monto"><h4>Monto</h4></label>
-      <select id="monto">
-        <option>Selecciona</option>
-        <option>$1M - $5M</option>
-        <option>$5M - $10M</option>
-        <option>$10M - $20M</option>
-        <option>$20M - $35M</option>
-      </select>
+        <fieldset>
+          <legend>Selecciona opciones</legend>
 
-      <a href="solicitud.html" class="btn-primary">Continuar</a>
-    </div>
-  </section>
+          <label for="tipo-credito">Tipo de crédito</label>
+          <select id="tipo-credito" name="tipo-credito">
+            <option value="">Selecciona</option>
+            <option>Crédito Libre Inversión</option>
+            <option>Crédito Vehículo</option>
+            <option>Crédito Educativo</option>
+            <option>Crédito Vivienda</option>
+            <option>Crédito Empresarial</option>
+            <option>Tarjeta de Crédito CS</option>
+          </select>
+
+          <label for="rango-monto">Rango de monto</label>
+          <select id="rango-monto" name="rango-monto">
+            <option value="">Selecciona</option>
+            <option>$1M - $5M</option>
+            <option>$5M - $10M</option>
+            <option>$10M - $20M</option>
+            <option>$20M - $40M</option>
+          </select>
+        </fieldset>
+
+        <!-- Estatico para este primer entregable -->
+        <fieldset>
+          <legend>Resultado</legend>
+
+          <div class="credits-grid credits-grid--compact">
+            <article class="credit-card">
+              <div class="card-header">
+                <span class="icon"><img src="img/imgLI.png" alt="Ícono Crédito Libre Inversión"></span>
+                <h4>Crédito Libre Inversión</h4>
+              </div>
+              <p>Adquiere tu crédito el mismo día para tus metas personales.</p>
+              <div class="details">
+                <div class="detail-item"><span class="label">Tasa de interés:</span><span class="highlight">1.8% mensual</span></div>
+                <div class="detail-item"><span class="label">Monto:</span><span class="value">$1M - $10M</span></div>
+                <div class="detail-item"><span class="label">Plazo:</span><span class="value">Hasta 60 meses</span></div>
+              </div>
+              <a href="solicitud.html" class="btn-primary">Solicitar ahora</a>
+            </article>
+
+            <article class="credit-card">
+              <div class="card-header">
+                <span class="icon"><img src="img/imgCV.png" alt="Ícono Crédito Vehículo"></span>
+                <h4>Crédito Vehículo</h4>
+              </div>
+              <p>Financia el vehículo de tus sueños con cuotas cómodas y flexibles.</p>
+              <div class="details">
+                <div class="detail-item"><span class="label">Tasa de interés:</span><span class="highlight">1.8% mensual</span></div>
+                <div class="detail-item"><span class="label">Monto:</span><span class="value">$1M - $25M</span></div>
+                <div class="detail-item"><span class="label">Plazo:</span><span class="value">Hasta 70 meses</span></div>
+              </div>
+              <a href="solicitud.html" class="btn-primary">Solicitar ahora</a>
+            </article>
+
+          </div>
+        </fieldset>
+
+        <!-- Boton para continuar proceso -->
+        <div class="form-actions">
+          <a href="solicitud.html" class="btn-primary">Continuar a Solicitud</a>
+        </div>
+
+      </form>
+    </section>
+  </main>
+
 
   <!-- Footer -->
   <footer class="footer-container">
