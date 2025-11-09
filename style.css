@@ -1,0 +1,256 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f5f7fae0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navegación */
+.navbar {
+  background-color: #166534; /* Verde institucional */
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.25);
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #95e2be; /* Verde claro para hover */
+}
+
+.navbar-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo alineado a la izquierda */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Menú alineado a la derecha */
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+
+.imgCS {
+  width: 20px;
+  height: auto;
+}
+
+.imgSIM {
+  width: 35px;
+  height: auto;
+}
+
+/* Banner Principal */
+.hero {
+  background: linear-gradient(135deg, #166534 0%, #22c55e 100%);
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+/* Créditos */
+.credits-selection h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #166534;
+  margin-bottom: 2rem;
+}
+
+.credits-selection {
+  padding: 3rem;
+}
+
+.credits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.credit-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.credit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(22, 101, 52, 0.2);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.card-header h4 {
+  font-size: 1.2rem;
+  color: #166534;
+}
+
+.credit-card p {
+  font-size: 0.9rem;
+}
+
+.details {
+  margin-bottom: 1.5rem;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.label {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.value {
+  font-weight: 600;
+  color: #166534;
+}
+
+.highlight {
+  color: #10b981;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: #22c55e;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #15803d;
+}
+
+/* Footer */
+.footer-container {
+  background: linear-gradient(135deg, #22c55e 0%, #0d3b2e 100%);
+  color: white;
+  padding: 2rem 0;
+  text-align-last: center;
+}
+
+.footer-index p {
+  border-top: 1px solid #646464;
+}
+
+/* Simulador */
+.credit-sim {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+  margin-left: 25rem;
+  margin-right: 25rem;
+  margin-bottom: 2rem;
+}
+
+.credit-sim:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(22, 101, 52, 0.2);
+}
+
+.card {
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+}
+
+select {
+  padding: 8px 12px;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #22c55e;
+  border-radius: 8px;
+  font-size: 16px;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+select:focus {
+  border-color: #166534;
+}
