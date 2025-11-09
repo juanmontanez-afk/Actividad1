@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador - CreditSmart</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="img/imgCS.png">
+</head>
+<body>
+
+  <!-- Navegación -->
+<nav class="navbar">
+  <div class="container navbar-flex">
+    <h1 class="logo">
+      <a href="index.html">
+        <img src="img/imgCS.png" alt="Logo CreditSmart" class="imgCS"> CreditSmart
+      </a>
+    </h1>
+    <ul class="menu">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="simulador.html">Simulador</a></li>
+      <li><a href="solicitud.html">Solicitar Crédito</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- Banner -->
+  <header class="hero">
+    <div class="container">
+      <h2><img src="img/SIM.png" alt="Simulador" class="imgSIM"> Simulador</h2>
+      <p>Calcula el valor de la cuota o el monto que puedes solicitar según tu capacidad de pago.</p>
+    </div>
+  </header>
+
+  <!-- Simulador -->
+  <section class="credit-sim">
+    <div class="card">
+      <label for="tipo-credito"><h4>Tipo de crédito</h4></label>
+      <select id="tipo-credito">
+        <option>Selecciona</option>
+        <option>Crédito Libre Inversión</option>
+        <option>Crédito Vehículo</option>
+        <option>Crédito Educativo</option>
+        <option>Crédito Vivienda</option>
+        <option>Crédito Empresarial</option>
+        <option>Tarjeta de Crédito CS</option>
+      </select>
+
+      <label for="monto"><h4>Monto</h4></label>
+      <select id="monto">
+        <option>Selecciona</option>
+        <option>$1M - $5M</option>
+        <option>$5M - $10M</option>
+        <option>$10M - $20M</option>
+        <option>$20M - $35M</option>
+      </select>
+
+      <a href="solicitud.html" class="btn-primary">Continuar</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-container">
+    <div class="footer-index">
+      <h3>CreditSmart ©</h3>
+      <p>Todos los derechos reservados 2025</p>
+    </div>
+  </footer>
+
+</body>
+</html>
